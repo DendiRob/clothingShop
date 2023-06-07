@@ -1,9 +1,12 @@
-import React from 'react';
-
+import React from 'react'
+import './style.sass'
+import MainPage from './components/pages/MainPage';
 
 function App() {
   return (
-    <h1>Hello World!</h1>
+    <div className='container'>
+      <MainPage />
+    </div>
   );
 }
 

@@ -1,0 +1,108 @@
+.MainPage
+    height: 650px
+    position: relative
+    background: url("./img/mainpage.png") 0px 0px no-repeat
+    background-size: cover
+    &__header
+        display: flex
+        width: 100%
+        height: 40px
+        background-color: #50735F
+        justify-content: center
+        align-items: center
+        &-describe
+            color: #ffffff
+            font-family: GT Cinetype Regular
+            font-size: 14px
+            font-weight: 400
+            span
+                Opacity: 30%
+    &__promo
+        z-index: 10
+        display: flex
+        justify-content: space-between
+        padding: 10px 50px 10px 50px
+        align-items: center
+        &_label
+            background: url("./img/menu.png") no-repeat 50%/cover
+            height: 60px
+            width: 100px
+        &_nav
+            list-style-type: none
+            display: flex
+            width: 300px
+            justify-content: space-between
+            padding: 0
+            padding-right: 50px
+            &-item
+                font-family: GT Cinetype Regular
+                font-size: 14px
+                font-weight: 400
+                color: #ffffff
+                cursor: pointer
+        &_cart
+            font-family: GT Cinetype Regular
+            font-size: 14px
+            font-weight: 400
+            color: #fff
+            vertical-align: bottom
+            cursor: pointer
+    &__grid
+        display: grid   
+        grid-template-rows: repeat(6, auto)
+        grid-template-columns: repeat(12, 1fr)
+        &-treehouse
+            font-family: GT Cinetype Regular
+            font-size: 14px
+            font-weight: 400
+            color: #fff
+            text-transform: uppercase
+            grid-column: 7/12
+        &-cloth
+            font-family: GT Cinetype Regular
+            font-size: 64px
+            font-weight: 100
+            color: #fff
+            grid-column: 7/12
+        &-impact
+            font-family: GT Cinetype Regular
+            font-size: 64px
+            font-weight: 100
+            color: #fff
+            grid-column: 6/12
+        &-descr
+            font-family: GT Cinetype Regular
+            font-size: 14px
+            font-weight: 400
+            line-height: 20px
+            color: #fff
+            grid-column: 7/10
+            margin-top: 20px
+        &-btn
+            font-family: GT Cinetype Regular
+            font-size: 14px
+            font-weight: 400
+            color: #fff
+            text-transform: uppercase
+            background-color: #C58A46
+            width: 170px
+            height: 50px
+            border: none
+            margin-top: 50px
+            padding-bottom: 5px
+            border-radius: 80px
+            grid-column: 7/12
+            cursor: pointer
+
+
+
+
+
+
+
+
+
+
+
+
+            
