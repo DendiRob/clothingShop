@@ -1,5 +1,6 @@
 import React from "react";
 import './MainPage.sass'
+import { Link } from 'react-router-dom'
 
 const MainPage = () => {
     return(
@@ -10,12 +11,12 @@ const MainPage = () => {
             <div className="MainPage__promo">
                 <div className="MainPage__promo_label"></div>
                 <ul className="MainPage__promo_nav">
-                    <li className="MainPage__promo_nav-item">Shop</li>
-                    <li className="MainPage__promo_nav-item">Our impact</li>
-                    <li className="MainPage__promo_nav-item">Journal</li>
-                    <li className="MainPage__promo_nav-item">Contacts</li>
+                    <Link to="/shop" className="MainPage__promo_nav-item">Shop</Link>
+                    <Link to="/impact" className="MainPage__promo_nav-item">Our impact</Link>
+                    <Link to="/journal" className="MainPage__promo_nav-item">Journal</Link>
+                    <Link to="contacts" className="MainPage__promo_nav-item">Contacts</Link>
                 </ul>
-                    <div className="MainPage__promo_cart" >Cart</div>
+                    <Link to="/cart" className="MainPage__promo_cart" >Cart</Link>
             </div>
             <div className="MainPage__grid">
                     <div className="MainPage__grid-treehouse">treehouse</div>
@@ -24,7 +25,7 @@ const MainPage = () => {
                     <div className="MainPage__grid-descr">
                     High-quality children's clothing, crafted with care from sustainable materials that are kind to the planet. These timeless styles are the perfect companions for your little adventurer, wherever their imagination takes them. 
                     </div>
-                    <button className="MainPage__grid-btn">Shop now</button>
+                    <Link className="MainPage__grid-btn">Shop now</Link>
                 </div>
         </div>
     )
