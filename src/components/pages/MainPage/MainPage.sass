@@ -116,28 +116,6 @@
             grid-column: 8/12
             margin-top: 20px
             grid-row: 1/2
-        &_title
-            &-14px
-                font-family: GT Cinetype Regular
-                font-size: 14px
-                font-weight: 400
-                color: #50735F
-                text-transform: uppercase
-                grid-column: 8/12
-            &-48px
-                font-family: GT Cinetype Regular
-                font-size: 48px
-                font-weight: 400
-                color: #50735F
-                grid-column: 8/11
-        &_describe
-            font-family: GT Cinetype Regular
-            font-size: 14px
-            font-weight: 400
-            line-height: 20px
-            color: #50735F
-            grid-column: 8/11
-            margin-top: 20px
         &_picture
             &-big
                 background: url("./img/welcomebig.png") no-repeat 50%/cover
@@ -166,8 +144,78 @@
                 z-index: 1
                 margin-left: -130px
                 margin-top: 20px
+    &__title
+        &-14px
+            font-family: GT Cinetype Regular
+            font-size: 14px
+            font-weight: 400
+            color: #50735F
+            text-transform: uppercase
+            grid-column: 8/12
+        &-48px
+            font-family: GT Cinetype Regular
+            font-size: 48px
+            font-weight: 400
+            color: #50735F
+            grid-column: 8/11
+    &__describe
+        font-family: GT Cinetype Regular
+        font-size: 14px
+        font-weight: 400
+        line-height: 20px
+        color: #50735F
+        grid-column: 8/11
+        margin-top: 20px
+    &__ourcare
+        display: grid
+        grid-template-columns: repeat(12, 1fr)
+        grid-template-rows: 490px 250px
+        padding: 100px 0 200px 0
+        &_info
+            &-left
+                grid-column: 1/7
+                grid-row: 1/2
+            &-right
+                margin-top: 40px
+                grid-column: 9/13
+                grid-row: 2/3
+        &_text
+            &-title
+                font-family: GT Cinetype Regular
+                font-size: 20px
+                font-weight: 400
+                line-height: 20px
+                text-align: left
+                color: #50735F
+                text-transform: uppercase
+                margin: 0
+                margin-top: 16px
+        &_photo
+            &-kids
+                background: url("./img/ourcarekids.png") no-repeat 50%/cover
+                width: 600px
+                height: 490px
+                grid-column: 7/13   
+                grid-row: 1/2
+                margin-left: 100px
+            &-hands
+                background: url("./img/ourcarehands.png") no-repeat 50%/cover
+                width: 210px
+                height: 250px
+                grid-column: 4/6
+                grid-row: 2/3
+                margin-top: 54px
+                margin-right: -20px
+                z-index: 1
+            &-girl
+                background: url("./img/ourcaregirl.png") no-repeat 50%/cover
+                width: 100px
+                height: 200px
+                z-index: 0
+                grid-column: 3/5
+                grid-row: 2/3
+                margin-top: 115px
 
-            
 
 
 
