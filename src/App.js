@@ -14,7 +14,7 @@ import CategoryPage from './components/pages/ShopPage/CategoryPage';
 function App() {
   return (
     <>
-      <div className='container'>
+      {/* <div className='container'> */}
         <Routes>
         {/* <Route path='/' element={<lBurger />} />   */}
           <Route index element={<MainPage />} />
@@ -27,7 +27,7 @@ function App() {
           <Route path='cart' element={<CartPage />} /> 
           <Route path='*' element={<MainPage />} />
         </Routes>
-      </div>
+      {/* </div> */}
     </>
   );
 }

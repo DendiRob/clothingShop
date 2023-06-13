@@ -1,10 +1,18 @@
-import React from "react";
-import './MainPage.sass'
-import { Link } from 'react-router-dom'
+import { React } from "react";    
+import './MainPage.sass';
+import { Link } from 'react-router-dom';
+import Slider from '../../slider/slider';
+
+
+
+
 
 const MainPage = () => {
+
+
     return(
         <div className="MainPage">
+
             <div className="MainPage__header">
                 <div className="MainPage__header-describe">Get 25% off buying the entire capsule collection <span>|</span> Subscribe to us and get 15% off your first order</div>
             </div>
@@ -19,7 +27,7 @@ const MainPage = () => {
                     </ul>
                         <Link to="/cart" className="MainPage__promo_cart" >Cart</Link>
                 </div>
-                <div className="MainPage__grid_promo">
+            <div className="MainPage__grid_promo">
                         <div className="MainPage__grid_promo-treehouse">treehouse</div>
                         <div className="MainPage__grid_promo-cloth">Little Clothes.</div>
                         <div className="MainPage__grid_promo-impact">Big Impact.</div>
@@ -28,7 +36,7 @@ const MainPage = () => {
                         </div>
                         <Link to='shop' className="MainPage__btn">Shop now</Link>
 
-                </div>
+            </div>
             </div>
             <div className="MainPage__welcome">
                 <div className="MainPage__welcome_picture-big"></div>
@@ -80,7 +88,20 @@ const MainPage = () => {
                     </div>
                 </div>
             </div>
+
+            <div className="MainPage__slider-wrapper">
+                <div className="container">
+                    <div className="MainPage__title-14px">your perfect match</div>
+                    <div className="MainPage__title-48px">
+                        Shop the look
+                    </div>
+                    <div className="MainPage__slider"><Slider /></div>
+                </div>
+                <div className="MainPage__slider_background"></div>
+            </div>
+                
         </div>
+        
     )
 }
 export default MainPage

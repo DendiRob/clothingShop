@@ -1,19 +1,25 @@
+
 {
-  "posts": [
+  "sliderPhotos": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "id": "1",
+      "url": "../../../data/sliderphoto/card1.png"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": "2",
+      "url": "../data/sliderphoto/card2.png"
+    },
+    {
+      "id": "3",
+      "url": "./data/sliderphoto/card3"
+    },
+    {
+      "id": "4",
+      "url": "./data/sliderphoto/card4"
+    },
+    {
+      "id": "5",
+      "url": "./src/data/sliderphoto/card5"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
