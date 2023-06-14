@@ -24,22 +24,72 @@ const Slider = () => {
             speed={5000}
             centeredSlides={true}
             autoplay={{
-            delay: 1,
+            delay: 100,
             disableOnInteraction: false,
             }}
             modules={[Autoplay]}
             className="mySwiper"
                 >
-                    <SwiperSlide><img className="slider__photos-item" alt="sliderphoto"  src={card1}/></SwiperSlide>
-                    <SwiperSlide><img className="slider__photos-item" alt="sliderphoto"  src={card2}/></SwiperSlide>
-                    <SwiperSlide><img className="slider__photos-item" alt="sliderphoto"  src={card3}/></SwiperSlide>
-                    <SwiperSlide><img className="slider__photos-item" alt="sliderphoto"  src={card4}/></SwiperSlide>
-                    <SwiperSlide><img className="slider__photos-item" alt="sliderphoto"  src={card5}/></SwiperSlide>
-                    <SwiperSlide><img className="slider__photos-item" alt="sliderphoto"  src={card1}/></SwiperSlide>
-                    <SwiperSlide><img className="slider__photos-item" alt="sliderphoto"  src={card2}/></SwiperSlide>
-                    <SwiperSlide><img className="slider__photos-item" alt="sliderphoto"  src={card3}/></SwiperSlide>
-                    <SwiperSlide><img className="slider__photos-item" alt="sliderphoto"  src={card4}/></SwiperSlide>
-                    <SwiperSlide><img className="slider__photos-item" alt="sliderphoto"  src={card5}/></SwiperSlide>
+                    <SwiperSlide>
+                        <img className="slider__photos_item" alt="sliderphoto"  src={card1}/>
+                        <div className="slider__photos_item-descr">
+                            Сozy chic for the playground
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img className="slider__photos_item" alt="sliderphoto"  src={card2}/>
+                        <div className="slider__photos_item-descr">
+                            Effortless Beach Style
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img className="slider__photos_item" alt="sliderphoto"  src={card3}/>
+                        <div className="slider__photos_item-descr">
+                            Forest School Essentials
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img className="slider__photos_item" alt="sliderphoto"  src={card4}/>
+                        <div className="slider__photos_item-descr">
+                            Playdate With Friends 5th
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img className="slider__photos_item" alt="sliderphoto"  src={card5}/>
+                        <div className="slider__photos_item-descr">
+                            Lounging at home
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img className="slider__photos_item" alt="sliderphoto"  src={card1}/>
+                        <div className="slider__photos_item-descr">
+                            Сozy chic for the playground
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img className="slider__photos_item" alt="sliderphoto"  src={card2}/>
+                        <div className="slider__photos_item-descr">
+                            Effortless Beach Style
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img className="slider__photos_item" alt="sliderphoto"  src={card3}/>
+                        <div className="slider__photos_item-descr">
+                            Forest School Essentials
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img className="slider__photos_item" alt="sliderphoto"  src={card4}/>
+                        <div className="slider__photos_item-descr">
+                            Playdate With Friends 5th
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img className="slider__photos_item" alt="sliderphoto"  src={card5}/>
+                        <div className="slider__photos_item-descr">
+                            Lounging at home
+                        </div>
+                    </SwiperSlide>
             </Swiper>
     )
 }

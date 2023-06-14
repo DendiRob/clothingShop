@@ -13,43 +13,12 @@
             font-weight: 400
             span
                 Opacity: 30%
-    &__promo
-        z-index: 10
-        display: flex
-        justify-content: space-between
-        padding: 10px 50px 10px 50px
-        align-items: center
-        &-wrapper
-            height: 650px
-            position: relative
-            background: url("./img/mainpage.png") 0px 0px no-repeat
-            background-size: cover
-        &_label
-            background: url("./img/menu.png") no-repeat 50%/cover
-            height: 60px
-            width: 100px
-        &_nav
-            list-style-type: none
-            display: flex
-            width: 300px
-            justify-content: space-between
-            padding: 0
-            padding-right: 50px
-            &-item
-                font-family: GT Cinetype Regular
-                font-size: 14px
-                font-weight: 400
-                color: #ffffff
-                text-decoration: none
-                cursor: pointer
-        &_cart
-            font-family: GT Cinetype Regular
-            font-size: 14px
-            font-weight: 400
-            color: #fff
-            vertical-align: bottom
-            cursor: pointer
-            text-decoration: none
+    &__promo-wrapper
+        height: 650px
+        position: relative
+        background: url("./img/mainpage.png") 0px 0px no-repeat
+        background-size: cover
+        padding-top: 150px
     &__grid
         &_promo
             display: grid   
@@ -175,12 +144,10 @@
             &-left
                 grid-column: 1/7
                 grid-row: 1/2
-                margin-left: 200px
             &-right
                 margin-top: 40px
                 grid-column: 9/13
                 grid-row: 2/3
-                margin-right: 100px
         &_text
             &-title
                 font-family: GT Cinetype Regular
@@ -232,9 +199,18 @@
 
 
 
-.slider__photos-item 
-    width: 360px
-    height: 360px
+.slider__photos
+    &_item 
+        width: 360px
+        height: 360px
+        &-descr
+            font-family: GT Cinetype Regular
+            font-size: 14px
+            font-weight: 400
+            text-align: left
+            color: #50735F
+            cursor: pointer
+
 
 
 
