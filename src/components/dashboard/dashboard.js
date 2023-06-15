@@ -30,15 +30,17 @@ const Dashboard = observer(() => {
                 right: (location.pathname === "/") ? "0": 'none'
 
             }}>
-                <Link to="/" className="dashboard__nav_label"></Link>
-                        <ul className="dashboard__nav_wrapper">
-                            <Link to="/shop" className="dashboard__nav-item">Shop</Link>
-                            <Link to="/impact" className="dashboard__nav-item">Our impact</Link>
-                            <Link to="/journal" className="dashboard__nav-item">Journal</Link>
-                            <Link to="contacts" className="dashboard__nav-item">Contacts</Link>
-                        </ul>
-                        <Link to="/cart" className="dashboard__nav_cart" >Cart</Link>
-            </header>
+                <div className="dashboard__nav_container">
+                    <Link to="/" className="dashboard__nav_label"></Link>
+                            <ul className="dashboard__nav_wrapper">
+                                <Link to="/shop" className="dashboard__nav-item">Shop</Link>
+                                <Link to="/impact" className="dashboard__nav-item">Our impact</Link>
+                                <Link to="/journal" className="dashboard__nav-item">Journal</Link>
+                                <Link to="contacts" className="dashboard__nav-item">Contacts</Link>
+                            </ul>
+                    <Link to="/cart" className="dashboard__nav_cart" >Cart</Link>
+                </div>
+            </header>   
             <Outlet />
             <footer className="dashboard__footer"  style={{
                 marginTop: (location.pathname === "/") ? "50px": 0

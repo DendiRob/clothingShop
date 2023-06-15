@@ -2,8 +2,6 @@ import { React } from "react";
 import './MainPage.sass';
 import { Link } from 'react-router-dom';
 import Slider from '../../slider/slider';
-import { AwareModal } from "../../modal";
-import awareState from "../../../store/awareState";
 import { observer } from "mobx-react-lite";
 
 
@@ -89,7 +87,6 @@ const MainPage = observer(() => {
                 </div>
                 <div className="MainPage__slider_background"></div>
             </div>
-            {awareState.activeModal? <AwareModal /> : '' }
         </div>
     )
 })

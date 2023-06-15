@@ -1,12 +1,8 @@
 .dashboard
     &__nav
         background-color: #50735F
-        margin: 0 auto
         z-index: 10
-        display: flex
-        justify-content: space-between
         padding: 10px 50px 10px 50px
-        align-items: center
         &_label
             background: url("./img/menu.png") no-repeat 50%/cover
             height: 60px
@@ -33,14 +29,29 @@
             vertical-align: bottom
             cursor: pointer
             text-decoration: none
+        &_container
+            display: flex
+            justify-content: space-between
+            align-items: center
+            max-width: 1140px
+            margin: 0 auto
     &__footer
         background-color: #50735F
-        padding: 50px 0 50px 0 
+        padding: 50px 10px 50px 10px
+        position: relative
         &_wrapper
             display: flex
             justify-content: space-between
             max-width: 1140px
             margin: 0 auto
+        &_leaf
+            background: url("./img/footerleaf.png") no-repeat 50%/cover
+            width: 300px
+            height: 200px
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            bottom: 0
         &_right
             display: flex
             justify-content: space-between
@@ -67,6 +78,7 @@
             color: #fff
             text-transform: uppercase
             list-style-type: none
+            z-index: 10
             &-item
                 font-family: GT Cinetype Regular
                 font-size: 14px
@@ -98,7 +110,6 @@
                 max-width: 450px
                 max-height: 55
             &-email form input
-                overflow: hidden
                 position: relative
                 font-family: GT Cinetype Regular
                 width: 100%
@@ -121,4 +132,48 @@
                 color: #fff
                 text-transform: uppercase
                 max-width: 250px
+// media
 
+@media (max-width:843px)
+    .dashboard
+        &__footer
+            &_wrapper
+                display: block
+            &_left
+                margin: 0 auto
+            &_label
+                margin: 0 auto
+                margin-top: 80px
+            &_rights
+                text-align: center
+            &_right
+                margin: 0 auto
+                margin-top: 50px
+@media (max-width:625px)
+    .dashboard
+        &__footer
+            &_input
+                &-email form input
+                    width: 77%
+        &__nav
+            &-item
+                font-size: 11px
+            &_cart
+                font-size: 11px
+            &_wrapper
+                width: 215px
+@media (max-width:506px)
+    .dashboard
+        &__footer
+            &_input
+                &-email form input
+                    width: 60%
+                &-btn
+                    right: 53px
+            &_left
+                width: 430px
+        &__nav
+            &-item
+                font-size: 11px
+            &_wrapper
+                padding: 0
