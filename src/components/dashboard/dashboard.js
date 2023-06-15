@@ -1,12 +1,22 @@
-import { React } from "react";    
+import { React, useState } from "react";    
 import './dashboard.sass';
 import { Link, Outlet, useLocation} from 'react-router-dom';
+import awareState from '../../store/awareState';
+import { AwareModal } from "../modal";
+import { observer } from "mobx-react-lite";
 
-const Dashboard = () => {
+const Dashboard = observer(() => {
+
     let location = useLocation()
-    
-console.log(location.pathname)
+    const [message, setMessage] = useState('');
 
+    const handleSubmit = event => {
+        setMessage(event.target.value);
+        event.preventDefault();
+    }
+    const handleClick = () => {
+        setMessage('');
+    }
 
     return(
         <>
@@ -40,9 +50,15 @@ console.log(location.pathname)
                                     <div className="dashboard__footer_input-title">
                                         subscribe to our mailing list and get 15% off your first order
                                     </div>
-                                    <form>
-                                        <input type="email" name="enteremail" placeholder="Enter your email"/>
-                                        <button className="dashboard__footer_input-btn">I’m in</button>
+                                    <form onSubmit={handleSubmit}>
+                                        <input 
+                                        onChange={handleSubmit}
+                                        value={message}
+                                        type="email" 
+                                        name="enteremail" 
+                                        placeholder="Enter your email"
+                                        />
+                                        <button type="button" className="dashboard__footer_input-btn" onClick={handleClick}>I’m in</button>
                                     </form>
                                 </div>
                             </div>
@@ -52,33 +68,45 @@ console.log(location.pathname)
                         <div className="dashboard__footer_right">
                             <ul className="dashboard__footer_refs">
                                 SITEMAP
-                                <li className="dashboard__footer_refs-item">Shop</li>
-                                <li className="dashboard__footer_refs-item">Meetus</li>
-                                <li className="dashboard__footer_refs-item">Our impact</li>
-                                <li className="dashboard__footer_refs-item">Gift cards</li>
-                                <li className="dashboard__footer_refs-item">FAQ</li>
-                                <li className="dashboard__footer_refs-item">Blog</li>
-                                <li className="dashboard__footer_refs-item">Contacts</li>
+                                <li className="dashboard__footer_refs-item">
+                                    <Link to="/shop" className="dashboard__nav-item">
+                                        Shop
+                                    </Link>
+                                </li>
+                                <li className="dashboard__footer_refs-item">
+                                    <Link to="/impact" className="dashboard__nav-item">Our impact</Link>
+                                </li>
+                                <li className="dashboard__footer_refs-item">
+                                    <Link to="/journal" className="dashboard__nav-item">
+                                        Journal
+                                    </Link>   
+                                </li>
+                                <li className="dashboard__footer_refs-item">
+                                    <Link to="contacts" className="dashboard__nav-item">
+                                        Contacts
+                                    </Link>
+                                </li>
                             </ul>
                             <ul className="dashboard__footer_refs">
                                 Social
-                                <li className="dashboard__footer_refs-item">Instagram</li>
-                                <li className="dashboard__footer_refs-item">FaceBook</li>
-                                <li className="dashboard__footer_refs-item">Pinterest</li>   
+                                <li className="dashboard__footer_refs-item" onClick={()=> awareState.toggleModal(true)}>Instagram</li>
+                                <li className="dashboard__footer_refs-item" onClick={()=> awareState.toggleModal(true)}>FaceBook</li>
+                                <li className="dashboard__footer_refs-item" onClick={()=> awareState.toggleModal(true)}>Pinterest</li>   
                             </ul>
                             <ul className="dashboard__footer_refs">
                                 CUSTOMER CARE
-                                <li className="dashboard__footer_refs-item">Terms & Conditions</li>
-                                <li className="dashboard__footer_refs-item">Privacy Policy</li>
-                                <li className="dashboard__footer_refs-item">Delivery & return</li>
-                                <li className="dashboard__footer_refs-item">Track your order</li>
-                                <li className="dashboard__footer_refs-item">FAQ</li>
+                                <li className="dashboard__footer_refs-item" onClick={()=> awareState.toggleModal(true)}>Terms & Conditions</li>
+                                <li className="dashboard__footer_refs-item" onClick={()=> awareState.toggleModal(true)}>Privacy Policy</li>
+                                <li className="dashboard__footer_refs-item" onClick={()=> awareState.toggleModal(true)}>Delivery & return</li>
+                                <li className="dashboard__footer_refs-item" onClick={()=> awareState.toggleModal(true)}>Track your order</li>
+                                <li className="dashboard__footer_refs-item" onClick={()=> awareState.toggleModal(true)}>FAQ</li>
                             </ul>
                         </div>
                     </div>
                 <div className="dashboard__footer_leaf"></div>
+                {awareState.activeModal? <AwareModal /> : '' }
             </footer>
         </>
     )
-}
+})
 export default Dashboard
