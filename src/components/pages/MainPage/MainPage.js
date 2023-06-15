@@ -12,9 +12,6 @@ const MainPage = () => {
 
     return(
         <div className="MainPage">
-            {/* <div className="MainPage__header">
-                <div className="MainPage__header-describe">Get 25% off buying the entire capsule collection <span>|</span> Subscribe to us and get 15% off your first order</div>
-            </div> */}
             <div className="MainPage__promo-wrapper">
                 <div className="container">
                     <div className="MainPage__grid_promo">

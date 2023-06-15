@@ -1,15 +1,26 @@
 import { React } from "react";    
 import './dashboard.sass';
-import { Link, Outlet} from 'react-router-dom';
+import { Link, Outlet, useLocation} from 'react-router-dom';
 
 const Dashboard = () => {
+    let location = useLocation()
     
+console.log(location.pathname)
 
 
     return(
         <>
-            <header className="dashboard__nav">
-                <div className="dashboard__nav_label"></div>
+            <header className="dashboard__nav" style={{
+                maxWidth: (location.pathname === "/") ? "1140px": '',
+                position: (location.pathname === "/") ? "absolute": 'relative',
+                marginLeft: (location.pathname === "/") ? "auto": 'none',
+                marginRight: (location.pathname === "/") ? "auto": 'none',
+                background: (location.pathname === "/") ? "none": '',
+                left: (location.pathname === "/") ? "0": 'none',
+                right: (location.pathname === "/") ? "0": 'none'
+
+            }}>
+                <Link to="/" className="dashboard__nav_label"></Link>
                         <ul className="dashboard__nav_wrapper">
                             <Link to="/shop" className="dashboard__nav-item">Shop</Link>
                             <Link to="/impact" className="dashboard__nav-item">Our impact</Link>
@@ -19,7 +30,9 @@ const Dashboard = () => {
                         <Link to="/cart" className="dashboard__nav_cart" >Cart</Link>
             </header>
             <Outlet />
-            <footer className="dashboard__footer"> 
+            <footer className="dashboard__footer"  style={{
+                marginTop: (location.pathname === "/") ? "50px": 0
+            }}> 
                     <div className="dashboard__footer_wrapper">
                         <div className="dashboard__footer_left">
                             <div className="dashboard__footer_input">
@@ -33,7 +46,7 @@ const Dashboard = () => {
                                     </form>
                                 </div>
                             </div>
-                            <div className="MainPage__promo_label"></div>
+                            <div className="dashboard__footer_label"></div>
                             <div className="dashboard__footer_rights">Tree House 2023 © All Rights reserved</div>
                         </div>
                         <div className="dashboard__footer_right">
