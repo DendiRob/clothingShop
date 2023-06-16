@@ -1,8 +1,47 @@
 .burgerMenu
-    background: url("./icon/burgermenu.svg") no-repeat 50%/cover
-    width: 30px
-    height: 30px
-    display: none
-@media (max-width:510px)
-    .burgerMenu
+    position: fixed
+    visibility: hidden
+    height: 100vh
+    z-index: 100
+    width: 100vw
+    transition: all .5s
+    left: -100%
+    &__wrapper
+        position: absolute
+        left: 0
+        background-color: #50735F
+        width: 300px
+        height: 100%
+    &__label
         display: block
+        background: url("./img/label.png") 0px 0px no-repeat
+        height: 60px
+        width: 100px
+        margin: 0 auto
+        margin-top: 50px
+    &__close
+        background: url("./img/closeicon.svg") no-repeat 50%/cover
+        height: 30px
+        width: 30px
+        position: absolute
+        right: 20px
+        top: 15px
+    &__nav
+        list-style-type: none
+        padding-left: 100px
+        &-item
+            margin-top: 30px
+        &-ref
+            font-family: GT Cinetype Regular
+            font-size: 20px
+            font-weight: 400
+            color: #fff
+            text-decoration: none
+            cursor: pointer
+.menuIsOpen
+    left: 0
+    visibility: visible
+
+
+
+

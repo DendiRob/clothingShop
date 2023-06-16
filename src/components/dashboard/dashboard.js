@@ -4,7 +4,8 @@ import { Link, Outlet, useLocation} from 'react-router-dom';
 import awareState from '../../store/awareState';
 import { AwareModal } from "../modal";
 import { observer } from "mobx-react-lite";
-import BurgerMenu from "../burgerMenu/burgerMenu";
+import burgerMenuState from "../../store/burgerMenuState";
+import BurgerMenu from '../burgerMenu'
 
 const Dashboard = observer(() => {
 
@@ -21,6 +22,7 @@ const Dashboard = observer(() => {
 
     return(
         <>
+            <BurgerMenu />
             <header className="dashboard__nav" style={{
                 maxWidth: (location.pathname === "/") ? "1140px": '',
                 position: (location.pathname === "/") ? "absolute": 'relative',
@@ -40,7 +42,7 @@ const Dashboard = observer(() => {
                                 <Link to="contacts" className="dashboard__nav-item">Contacts</Link>
                             </ul>
                     <Link to="/cart" className="dashboard__nav_cart" ></Link>
-                    <BurgerMenu />
+                    <div className='burger' onClick={() => burgerMenuState.openMenu()}></div>
                 </div>
             </header>   
             <Outlet />

@@ -175,7 +175,7 @@
             &_input
                 &-email form input
                 &-btn
-                    right: 11px
+                    right: -24px
             &_left
                 max-width: 300px
             &_right
@@ -188,5 +188,21 @@
                 display: none
             &_cart
             &_label
-                display: none                
-
+                display: none
+@media (max-width:375px)
+    .dashboard
+        &__footer
+            &_refs
+                padding: 0
+            &_input
+                &-btn
+                    right: 11px
+                    
+.burger
+    background: url("./img/burgermenu.svg") no-repeat 50%/cover
+    width: 30px
+    height: 30px
+    display: none
+@media (max-width:510px)
+    .burger
+        display: block
