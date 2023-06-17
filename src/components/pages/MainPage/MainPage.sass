@@ -132,7 +132,7 @@
         display: grid
         grid-template-columns: repeat(12, 1fr)
         grid-template-rows: 490px 250px
-        padding: 100px 0 200px 0
+        padding: 100px 15px 200px 15px
         &_info
             &-left
                 grid-column: 1/7
@@ -181,17 +181,14 @@
         margin-top: 40px
         &-wrapper
             position: relative
+            .container div
+                padding: 0 10px 0 10px
         &_background
             position: absolute
             background-color: #D9C7BB
             height: 250px
             width: 100%
             top: 300px
-            
-            
-
-
-
 .slider__photos
     &_item 
         width: 360px
@@ -204,13 +201,184 @@
             color: #50735F
             cursor: pointer
 
+// slider adaptation
+@media (max-width:1055px)
+    .slider
+        &__photos
+            &_item
+                width: 300px
+                height: 300px
+@media screen and (min-width:1012px)
+    .swiper-wrapper
+        width:1012px
+    .swiper-slide
+        width: 80%
+@media screen and (min-width:854px)
+    .swiper-wrapper
+        width: 854px
+    .swiper-slide
+        width: 80%
+@media screen and (min-width:610px)
+    .swiper-wrapper
+        width: 610px
+    .swiper-slide
+        width: 80%
+@media screen and (min-width:300px)
+    .swiper-wrapper
+        width: 300px
+    .swiper-slide
+        width: 80%
+//mainpage adaptation
+@media (max-width:1012px)
+    .MainPage
+        &__grid
+            &_promo
+                &-cloth
+                    font-size: 45px
+                &-impact
+                    font-size: 45px
+                &-descr
+                    font-size: 12px
+        &__title
+            &-48px
+                font-size: 35px
+        &__describe
+            font-size: 12px
+        &__ourcare
+            &_text
+                &-title
+                    font-size: 15px
+            &_photo
+                &-kids
+                    width: 400px    
+@media (max-width:765px)
+    .MainPage
+        &__btn
+            &-green
+                margin: 0 auto
+                margin-top: 30px
+        &__welcome
+            display: block
+            margin-top: 60px
+            position: relative
+            padding-bottom: 50px
+            &-wrapper
+                display: block
+                margin: 0 auto
+                text-align: center
+                width: 400px
+                margin-top: 50px
+            &_picture
+                &-small
+                    position: absolute
+                    top: -20px
+                    z-index: 10
+                    left: 250px
+                &-big
+                    margin: 0 auto
+                    z-index: 9
+                &-leaf
+                    margin-left: 10px
+                    position: absolute
+                    top: 0
+                    left: 100px
+                    z-index: -1
+        &__ourcare
+            padding-top: 50px
+            padding-bottom: 100px
+            display: flex
+            flex-direction: column
+            align-items: center
+            position: relative
+            &_photo
+                &-kids
+                    order: -1
+                    margin: 0
+                &-hands
+                    order: 2
+                &-girl
+                    display: none
+            &_info
+                &-left
+                    order: 1
+                    max-width: 400px
+                    margin-top: 30px
+                    .MainPage__title-14px
+                        text-align: center
+                    .MainPage__title-48px
+                        text-align: center
+                        margin-bottom: 20px
+                &-right
+                    order: 3
+                    max-width: 400px
+                    margin-top: 30px
+        &__slider
+            &-wrapper
+                .MainPage__title-14px
+                        text-align: center
+                .MainPage__title-48px
+                        text-align: center
+@media (max-width:706px)
+    .MainPage
+        &__grid
+            &_promo
+                display: block
+                .MainPage__btn
+                    margin: 0 auto
+                    margin-top: 70px
+                &-cloth
+                    font-size: 35px
+                    text-align: center
+                    margin-left: 35px
+                &-impact
+                    font-size: 35px
+                    text-align: center
+                &-descr
+                    width: 300px
+                    text-align: center
+                    margin: 0 auto
+                    margin-top: 10px
+                &-treehouse
+                    text-align: center
+        &__promo
+            &-wrapper
+                padding-top: 300px
+        &__welcome
+            &_picture
+                &-leaf
+                    display: none
+                &-small
+                    left: 190px
+@media (max-width:530px)
+    .MainPage     
+        &__welcome
+            &_picture
+                &-small
+                    left: 150px
+@media (max-width:530px)
+    .MainPage     
+        &__welcome
+            &_picture
+                &-big
+                    width: 300px
+                    height: 360px
+                &-small
+                    width: 150px
+                    height: 210px
+        &__ourcare
+            &_photo
+                &-kids
+                    width: 300px
+                    height: 400px
+@media (max-width:410px)
+    .MainPage
+        &__welcome
+            &-wrapper
+                max-width: 300px
+@media (max-width:375px)
+    .MainPage
+        &__welcome
+            &_picture-small
+                display: none
 
 
-
-
-
-
-
-
-
-            
