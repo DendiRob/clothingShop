@@ -8,7 +8,6 @@ import JournalPage from './components/pages/JournalPage';
 import ContactsPage from './components/pages/ContactsPage';
 import CartPage from './components/pages/CartPage';
 import CardPage from './components/pages/ShopPage/CardPage';
-import CategoryPage from './components/pages/ShopPage/CategoryPage';
 import Dashboard from './components/dashboard';
 
 
@@ -19,8 +18,7 @@ function App() {
           <Route path='/' element={<Dashboard />}>
             <Route index element={<MainPage />} />
             <Route path='shop' element={<ShopPage />} />
-            <Route path='shop/:category' element={<CategoryPage/>} />
-            <Route path='shop/:category/:id' element={<CardPage/>} />
+            <Route path='shop/:id' element={<CardPage/>} />
             <Route path='impact' element={<ImpactPage />} />
             <Route path='journal' element={<JournalPage />} />
             <Route path='contacts' element={<ContactsPage />} />
