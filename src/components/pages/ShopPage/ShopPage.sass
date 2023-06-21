@@ -94,12 +94,95 @@
             padding: 15px 0 15px 15px
             margin-left: 10px
             cursor: pointer
+            &:focus-within
+                .shopPage__sort_filter
+                    display: block
+                .shopPage__sort_filter-itemArrow
+                    rotate: (0deg)
             &-current
                 font-size: 16px
                 font-weight: 400
                 color: #50735F  
                 font-family: GT Cinetype Regular
-                
+    &__content
+        display: flex
+        padding-top: 32px
+    &__filter
+        max-width: 200px
+        &_title
+            text-transform: uppercase
+            color: #50735F
+            font-family: GT Cinetype Regular
+            font-size: 20px
+            font-weight: 400
+            text-align: left
+        &_divider
+            width: 100%
+            height: 1px
+            background-color: #50735F
+            margin-top: 32px
+        &_category
+            padding: 0
+            list-style-type: none
+            text-transform: uppercase
+            color: #50735F
+            font-family: GT Cinetype Regular
+            font-size: 20px
+            font-weight: 400
+            text-align: left
+            &-item
+                position: relative
+                color: #50735F
+                text-transform: none
+                font-family: GT Cinetype Regular
+                font-size: 14px
+                font-weight: 400
+                margin-top: 16px
+                padding-left: 35px
+                &::before
+                    content: ''
+                    display: block
+                    width: 24px
+                    height: 24px
+                    border: 1px solid #50735F
+                    position: absolute
+                    left: 0
+                    top: -4px
+    &__clothes
+        width: 100%
+        display: flex
+        padding: 0 25px 0 25px
+        list-style-type: none
+        flex-wrap: wrap
+        justify-content: space-between
+        &_item
+            width: 300px
+            height: 400px
+            margin-bottom: 50px
+            &-img
+                width: 270px
+                height: 370px
+                object-fit: cover
+            &-title
+                color: #50735F
+                text-transform: uppercase
+                font-family: GT Cinetype Regular
+                font-size: 14px
+                font-weight: 400
+                text-align: left
+                margin-top: 16px
+            &-price
+                color: #50735F
+                text-transform: uppercase
+                font-family: GT Cinetype Regular
+                font-size: 14px
+                font-weight: 400
+                text-align: left
+                margin-top: 5px
+
+
+
+
 
 
     

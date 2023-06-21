@@ -9,9 +9,10 @@ class ShopPriceFilter {
 
     openMenu(){
         this.activeMenu = this.activeMenu? false : true;
-        console.log(this.activeMenu)
     }
-
+    closeMenu() {
+        this.activeMenu =  false;
+    }
     chooseNameFilter(name){
         this.statusFilter = name
     }
