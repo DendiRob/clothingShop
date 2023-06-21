@@ -1,25 +1,119 @@
 
 {
-  "sliderPhotos": [
+  "clothes": [
     {
-      "id": "1",
-      "url": "../../../data/sliderphoto/card1.png"
+      "id": "item1",
+      "title": "Birch Shirt in Sand",
+      "color": "#D9C7BB",
+      "price": "45",
+      "urlPhoto": "#",
+      "category": "tops"
     },
     {
-      "id": "2",
-      "url": "../data/sliderphoto/card2.png"
+      "id": "item2",
+      "title": "Oak Tee",
+      "color": "#C58A46",
+      "price": "34",
+      "urlPhoto": "#",
+      "category": "tops"
     },
     {
-      "id": "3",
-      "url": "./data/sliderphoto/card3"
+      "id": "item3",
+      "title": "Willow Tee",
+      "color": "#D9C7BB",
+      "price": "34",
+      "urlPhoto": "#",
+      "category": "tops"
+
     },
     {
-      "id": "4",
-      "url": "./data/sliderphoto/card4"
+      "id": "item4",
+      "title": "Oak Henley Tee",
+      "color": "#ADBBC4",
+      "price": "34",
+      "urlPhoto": "#",
+      "category": "tops"
     },
     {
-      "id": "5",
-      "url": "./src/data/sliderphoto/card5"
+      "id": "item5",
+      "title": "Birch Romper in Sleepy Blue",
+      "color": "#ADBBC4",
+      "price": "62",
+      "urlPhoto": "#",
+      "category": "rompers"
+    },
+    {
+      "id": "item6",
+      "title": "Maple Romper in Canyon Clay",
+      "color": "#884F56",
+      "price": "70",
+      "urlPhoto": "#",
+      "category": "rompers"
+    },
+    {
+      "id": "item7",
+      "title": "Ginkgo Romper in Tassel",
+      "color": "#C58A46",
+      "price": "62",
+      "urlPhoto": "#",
+      "category": "rompers"
+    },
+    {
+      "id": "item8",
+      "title": "Oak Pant in Tassel",
+      "color": "#C58A46",
+      "price": "52",
+      "urlPhoto": "#",
+      "category": "bottoms"
+    },
+    {
+      "id": "item9",
+      "title": "Gingko Pant in Ripe Olive",
+      "color": "#4E4A3E",
+      "price": "42",
+      "urlPhoto": "#",
+      "category": "bottoms"
+    },
+    {
+      "id": "item10",
+      "title": "Oak Pant in Naval",
+      "color": "#C58A46",
+      "price": "42",
+      "urlPhoto": "#",
+      "category": "bottoms"
+    },
+    {
+      "id": "item11",
+      "title": "Oak Short in Naval",
+      "color": "#C58A46",
+      "price": "45",
+      "urlPhoto": "#",
+      "category": "bottoms"
+    },
+    {
+      "id": "item12",
+      "title": "Willow Short in Canyon Clay",
+      "color": "#884F56",
+      "price": "36",
+      "urlPhoto": "#",
+      "category": "bottoms"
+    },
+    {
+      "id": "item13",
+      "title": "Birch Short in Sand",
+      "color": "#D9C7BB",
+      "price": "36",
+      "urlPhoto": "#",
+      "category": "bottoms"
+    },
+    {
+      "id": "item14",
+      "title": "Three-leaf Bucket Hat",
+      "color": "#D9C7BB",
+      "price": "22",
+      "urlPhoto": "#4E4A3E",
+      "category": "hats"
     }
   ]
+
 }
