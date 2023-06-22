@@ -4,13 +4,16 @@ import { observer } from "mobx-react-lite";
 import shopPriceFilter from "../../../store/shopPriceFilter";
 import ShopCard from './shopCard/shopCard';
 import shopItemsArr from "../../../store/shopItemsArr";
+import categoryStates from "../../../store/categoryStates";
 
 
 const ShopPage = observer(() => {
 
     useEffect(() => {
+
         shopItemsArr.loadItems()
-    }, [])
+    }, []);
+
     return(
         <div onClick={() => shopPriceFilter.closeMenu()}>
         <div className="container" >
@@ -30,9 +33,20 @@ const ShopPage = observer(() => {
                         <ul className="shopPage__sort_filter" style={{
                             display: shopPriceFilter.activeMenu? 'block' : 'none'
                         }}>  
-                            <li className="shopPage__sort_filter-item" onClick={() => shopPriceFilter.chooseNameFilter("All")}>All</li>
-                            <li className="shopPage__sort_filter-item" onClick={() => shopPriceFilter.chooseNameFilter("Price - Low to High")}>Price - Low to High</li>
-                            <li className="shopPage__sort_filter-item" onClick={() => shopPriceFilter.chooseNameFilter("Price - High to Low")}>Price - High to Low</li>
+                            <li className="shopPage__sort_filter-item" onClick={() =>{
+                                if(shopPriceFilter.statusFilter !== 'All'){
+                                    shopItemsArr.sortAllPriceItems()
+                                }
+                                shopPriceFilter.chooseNameFilter("All")
+                        }}>All</li>
+                            <li className="shopPage__sort_filter-item" onClick={() => {
+                                shopItemsArr.sortLowToHighPriceItems()
+                                shopPriceFilter.chooseNameFilter("Price - Low to High")
+                                }}>Price - Low to High</li>
+                            <li className="shopPage__sort_filter-item" onClick={() => {
+                                shopItemsArr.sortHighToLowPriceItems()
+                                shopPriceFilter.chooseNameFilter("Price - High to Low")
+                        }}>Price - High to Low</li>
                         </ul>
                         <div className="shopPage__sort_filter-item shopPage__sort_filter-itemArrow" style={{
                             rotate: shopPriceFilter.activeMenu ? "0deg" : '180deg'
@@ -46,10 +60,58 @@ const ShopPage = observer(() => {
                         <div className="shopPage__filter_divider"></div>
                         <ul className="shopPage__filter_category">
                             Categories
-                            <li className="shopPage__filter_category-item">Tops</li>
-                            <li className="shopPage__filter_category-item">Bottoms</li>
-                            <li className="shopPage__filter_category-item">Rompers</li>
-                            <li className="shopPage__filter_category-item">Hats</li>
+                            <li className="shopPage__filter_category-item">
+                                <div 
+                                className="shopPage__filter_category-radio"
+                                style={{
+                                    backgroundColor: categoryStates.tops? "#50735F":""
+                                }}
+                                onClick={() => {
+                                    shopItemsArr.chooseCategory('tops') 
+                                    categoryStates.onTops()}
+                                }
+                                ></div>
+                                <div className="topstitle">Tops</div>
+                            </li>
+                            <li className="shopPage__filter_category-item">
+                                <div 
+                                className="shopPage__filter_category-radio"
+                                style={{
+                                    backgroundColor: categoryStates.bottoms? "#50735F":""
+                                }}
+                                onClick={() => {
+                                    shopItemsArr.chooseCategory('bottoms') 
+                                    categoryStates.onBottoms()}
+                                }
+                                ></div>
+                                <div className="topstitle">Bottoms</div>
+                            </li>
+                            <li className="shopPage__filter_category-item">
+                                <div 
+                                className="shopPage__filter_category-radio"
+                                style={{
+                                    backgroundColor: categoryStates.rompers? "#50735F":""
+                                }}
+                                onClick={() => {
+                                    shopItemsArr.chooseCategory('rompers') 
+                                    categoryStates.onRompers()}
+                                }
+                                ></div>
+                                <div className="topstitle">Rompers</div>
+                            </li>
+                            <li className="shopPage__filter_category-item">
+                                <div 
+                                className="shopPage__filter_category-radio"
+                                style={{
+                                    backgroundColor: categoryStates.hats? "#50735F":""
+                                }}
+                                onClick={() => {
+                                    shopItemsArr.chooseCategory('hats') 
+                                    categoryStates.onHats()}
+                                }
+                                ></div>
+                                <div className="topstitle">Hats</div>
+                            </li>
                         </ul>
                     </div>
                     <ul className="shopPage__clothes">
