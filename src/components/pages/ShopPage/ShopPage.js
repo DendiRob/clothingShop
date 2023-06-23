@@ -59,7 +59,7 @@ const ShopPage = observer(() => {
                         <div className="shopPage__filter_title">Filter</div>
                         <div className="shopPage__filter_divider"></div>
                         <ul className="shopPage__filter_category">
-                            Categories
+                            <div className="shopPage__filter_category-title">Categories</div>
                             <li className="shopPage__filter_category-item">
                                 <div 
                                 className="shopPage__filter_category-radio"

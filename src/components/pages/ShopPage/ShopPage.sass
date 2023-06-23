@@ -1,6 +1,5 @@
 .shopPage
-    padding-top: 50px
-    padding-bottom: 250px
+    padding: 50px 20px 150px 20px
     &__banner
         position: relative
         height: 450px
@@ -62,7 +61,7 @@
             margin: 0 
             padding: 0
             display: none
-            right: 9px
+            right: 0
             top: 55px
             overflow: hidden
             &-item
@@ -82,7 +81,7 @@
                     display: block
                     position: absolute
                     top: 17px
-                    right: 20px
+                    right: 11px
                     rotate: (180deg)    
                     padding: 0
                     &:hover
@@ -94,6 +93,7 @@
             padding: 15px 0 15px 15px
             margin-left: 10px
             cursor: pointer
+            position: relative
             &:focus-within
                 .shopPage__sort_filter
                     display: block
@@ -147,6 +147,7 @@
                 position: absolute
                 left: 0
                 top: -4px
+                cursor: pointer
     &__clothes
         width: 100%
         display: flex
@@ -159,6 +160,8 @@
             height: 400px
             margin-bottom: 50px
             &-img
+                margin: 0 auto
+                display: block
                 width: 270px
                 height: 370px
                 object-fit: cover
@@ -178,11 +181,71 @@
                 font-weight: 400
                 text-align: left
                 margin-top: 5px
-
-
-
-
-
-
-
-    
+//adaptetion 
+@media (max-width:1080px)
+    .shopPage
+        &__clothes
+            justify-content: space-around
+        &__banner
+            background-position: 50% 100%
+@media (max-width:540px)
+        .shopPage
+            &__clothes
+                padding: 0
+            &__content
+                display: block
+                position: relative
+                margin: 0 auto
+            &__banner
+                height: 300px
+                &_title
+                    &-big
+                        font-size: 38px
+                        width: 300px
+            &__filter
+                margin: 0 auto
+                width: 100%
+                max-width: 300px
+                &_title
+                    display: none
+                &_divider
+                    display: none
+                &_category
+                    margin: 0 auto
+                    display: flex
+                    width: 300px
+                    justify-content: space-between
+                    &-title
+                        position: absolute
+                        left: 50%
+                        transform: translateX(-50%)
+                        top: 20px
+                    &-item
+                        width: 56px
+                        display: flex
+                        flex-direction: column-reverse
+                        align-items: center
+                        padding: 0
+                    &-radio
+                        position: relative
+                        margin-top: 10px
+            &__sort
+                &_filter
+                    z-index: 10
+                &_wrapper
+                    justify-content: center
+                    position: relative
+@media (max-width:340px)
+    .shopPage
+        &__sort
+            &_name
+                font-size: 12px
+            &_changeFilter
+                margin-left: 5px
+        &__banner
+            &_title
+                &-big
+                    font-size: 28px
+        &__filter
+            &_category
+                width: 260px
