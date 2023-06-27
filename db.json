@@ -6,7 +6,10 @@
       "color": "#D9C7BB",
       "price": "45",
       "urlPhoto": "https://cdn1.ozone.ru/s3/multimedia-q/6616203110.jpg",
-      "category": "tops"
+      "category": "tops",
+      "reviews": [],
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, dolorum eveniet minus suscipit debitis animi sequi molestiae obcaecati distinctio assumenda quod, unde nam! Labore libero impedit delectus ea magnam unde?",
+      "raiting": 0
     },
     {
       "id": "item2",
@@ -14,7 +17,10 @@
       "color": "#C58A46",
       "price": "34",
       "urlPhoto": "https://img.ltwebstatic.com/images3_pi/2021/09/08/1631092759434c040821acdb711f81fa5cff0515cb.jpg",
-      "category": "tops"
+      "category": "tops",
+      "reviews": [],
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, dolorum eveniet minus suscipit debitis animi sequi molestiae obcaecati distinctio assumenda quod, unde nam! Labore libero impedit delectus ea magnam unde?",
+      "raiting": 0
     },
     {
       "id": "item3",
@@ -22,7 +28,10 @@
       "color": "#D9C7BB",
       "price": "34",
       "urlPhoto": "https://img.ltwebstatic.com/images3_pi/2021/09/15/1631682585f7f48cb82293ca37482735dd4e388dbc.jpg",
-      "category": "tops"
+      "category": "tops",
+      "reviews": [],
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, dolorum eveniet minus suscipit debitis animi sequi molestiae obcaecati distinctio assumenda quod, unde nam! Labore libero impedit delectus ea magnam unde?",
+      "raiting": 0
 
     },
     {
@@ -31,7 +40,10 @@
       "color": "#ADBBC4",
       "price": "34",
       "urlPhoto": "https://i.pinimg.com/736x/a1/bb/ea/a1bbea8edc130126d2a5cac2ed6e5889.jpg",
-      "category": "tops"
+      "category": "tops",
+      "reviews": [],
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, dolorum eveniet minus suscipit debitis animi sequi molestiae obcaecati distinctio assumenda quod, unde nam! Labore libero impedit delectus ea magnam unde?",
+      "raiting": 0
     },
     {
       "id": "item5",
@@ -39,7 +51,10 @@
       "color": "#ADBBC4",
       "price": "62",
       "urlPhoto": "https://ae04.alicdn.com/kf/Sf2c4378e2abd4b3daca64aae1e3858baT.jpg",
-      "category": "rompers"
+      "category": "rompers",
+      "reviews": [],
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, dolorum eveniet minus suscipit debitis animi sequi molestiae obcaecati distinctio assumenda quod, unde nam! Labore libero impedit delectus ea magnam unde?",
+      "raiting": 0
     },
     {
       "id": "item6",
@@ -47,7 +62,10 @@
       "color": "#884F56",
       "price": "70",
       "urlPhoto": "https://avatars.mds.yandex.net/get-mpic/7464534/img_id8715974747860430937.jpeg/orig",
-      "category": "rompers"
+      "category": "rompers",
+      "reviews": [],
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, dolorum eveniet minus suscipit debitis animi sequi molestiae obcaecati distinctio assumenda quod, unde nam! Labore libero impedit delectus ea magnam unde?",
+      "raiting": 0
     },
     {
       "id": "item7",
@@ -55,7 +73,10 @@
       "color": "#C58A46",
       "price": "62",
       "urlPhoto": "https://cdn.laredoute.com/products/1200by1200/2/a/6/2a68828b1ef7cb49cdf57b5c34bebc66.jpg",
-      "category": "rompers"
+      "category": "rompers",
+      "reviews": [],
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, dolorum eveniet minus suscipit debitis animi sequi molestiae obcaecati distinctio assumenda quod, unde nam! Labore libero impedit delectus ea magnam unde?",
+      "raiting": 0
     },
     {
       "id": "item8",
@@ -63,7 +84,10 @@
       "color": "#C58A46",
       "price": "52",
       "urlPhoto": "https://cdn1.ozone.ru/s3/multimedia-x/6512359953.jpg",
-      "category": "bottoms"
+      "category": "bottoms",
+      "reviews": [],
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, dolorum eveniet minus suscipit debitis animi sequi molestiae obcaecati distinctio assumenda quod, unde nam! Labore libero impedit delectus ea magnam unde?",
+      "raiting": 0
     },
     {
       "id": "item9",
@@ -72,6 +96,9 @@
       "price": "42",
       "urlPhoto": "https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202109/03/00141239200094____1__516x640.jpg",
       "category": "bottoms"
+      ,"reviews": [],
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, dolorum eveniet minus suscipit debitis animi sequi molestiae obcaecati distinctio assumenda quod, unde nam! Labore libero impedit delectus ea magnam unde?",
+      "raiting": 0
     },
     {
       "id": "item10",
@@ -79,7 +106,10 @@
       "color": "#C58A46",
       "price": "42",
       "urlPhoto": "https://dfcdn.defacto.com.tr/768/R0067A2_20SM_BG219_01_03.jpg",
-      "category": "bottoms"
+      "category": "bottoms",
+      "reviews": [],
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, dolorum eveniet minus suscipit debitis animi sequi molestiae obcaecati distinctio assumenda quod, unde nam! Labore libero impedit delectus ea magnam unde?",
+      "raiting": 0
     },
     {
       "id": "item11",
@@ -87,7 +117,10 @@
       "color": "#C58A46",
       "price": "45",
       "urlPhoto": "https://www.gap.com/webcontent/0014/642/442/cn14642442.jpg",
-      "category": "bottoms"
+      "category": "bottoms",
+      "reviews": [],
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, dolorum eveniet minus suscipit debitis animi sequi molestiae obcaecati distinctio assumenda quod, unde nam! Labore libero impedit delectus ea magnam unde?",
+      "raiting": 0
     },
     {
       "id": "item12",
@@ -95,7 +128,10 @@
       "color": "#884F56",
       "price": "36",
       "urlPhoto": "https://www.insidehook.com/wp-content/uploads/2020/08/cordshort6.jpg",
-      "category": "bottoms"
+      "category": "bottoms",
+      "reviews": [],
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, dolorum eveniet minus suscipit debitis animi sequi molestiae obcaecati distinctio assumenda quod, unde nam! Labore libero impedit delectus ea magnam unde?",
+      "raiting": 0
     },
     {
       "id": "item13",
@@ -103,7 +139,10 @@
       "color": "#D9C7BB",
       "price": "36",
       "urlPhoto": "https://petimer.ru/upload/iblock/93a/93a62a656ebc4766c98ee4699397466c.jpg",
-      "category": "bottoms"
+      "category": "bottoms",
+      "reviews": [],
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, dolorum eveniet minus suscipit debitis animi sequi molestiae obcaecati distinctio assumenda quod, unde nam! Labore libero impedit delectus ea magnam unde?",
+      "raiting": 0
     },
     {
       "id": "item14",
@@ -111,7 +150,10 @@
       "color": "#4E4A3E",
       "price": "22",
       "urlPhoto": "https://hmonline.ru/pictures/product/big/9210400_big.jpg",
-      "category": "hats"
+      "category": "hats",
+      "reviews": [],
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, dolorum eveniet minus suscipit debitis animi sequi molestiae obcaecati distinctio assumenda quod, unde nam! Labore libero impedit delectus ea magnam unde?",
+      "raiting": 0
     }
   ]
 }
