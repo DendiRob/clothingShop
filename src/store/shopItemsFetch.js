@@ -7,7 +7,7 @@ configure({
     useProxies: "never"
 })
 
-class shopItemsArr {
+class shopItemsFetch {
     shopItems = [];
 
     setItems(data) {
@@ -93,4 +93,4 @@ class shopItemsArr {
 }
 
 // eslint-disable-next-line
-export default new shopItemsArr()
+export default new shopItemsFetch()

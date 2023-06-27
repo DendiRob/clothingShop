@@ -9,7 +9,7 @@
       "category": "tops",
       "reviews": [],
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, dolorum eveniet minus suscipit debitis animi sequi molestiae obcaecati distinctio assumenda quod, unde nam! Labore libero impedit delectus ea magnam unde?",
-      "raiting": 0
+      "raiting": 3.25
     },
     {
       "id": "item2",
@@ -20,7 +20,8 @@
       "category": "tops",
       "reviews": [],
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, dolorum eveniet minus suscipit debitis animi sequi molestiae obcaecati distinctio assumenda quod, unde nam! Labore libero impedit delectus ea magnam unde?",
-      "raiting": 0
+      "raiting": 3.55
+
     },
     {
       "id": "item3",
@@ -31,7 +32,7 @@
       "category": "tops",
       "reviews": [],
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, dolorum eveniet minus suscipit debitis animi sequi molestiae obcaecati distinctio assumenda quod, unde nam! Labore libero impedit delectus ea magnam unde?",
-      "raiting": 0
+      "raiting": 3.5
 
     },
     {
@@ -43,7 +44,7 @@
       "category": "tops",
       "reviews": [],
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, dolorum eveniet minus suscipit debitis animi sequi molestiae obcaecati distinctio assumenda quod, unde nam! Labore libero impedit delectus ea magnam unde?",
-      "raiting": 0
+      "raiting": 2.5
     },
     {
       "id": "item5",
@@ -54,7 +55,7 @@
       "category": "rompers",
       "reviews": [],
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, dolorum eveniet minus suscipit debitis animi sequi molestiae obcaecati distinctio assumenda quod, unde nam! Labore libero impedit delectus ea magnam unde?",
-      "raiting": 0
+      "raiting": 2.75
     },
     {
       "id": "item6",
@@ -65,7 +66,7 @@
       "category": "rompers",
       "reviews": [],
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, dolorum eveniet minus suscipit debitis animi sequi molestiae obcaecati distinctio assumenda quod, unde nam! Labore libero impedit delectus ea magnam unde?",
-      "raiting": 0
+      "raiting": 1.75
     },
     {
       "id": "item7",
@@ -76,7 +77,7 @@
       "category": "rompers",
       "reviews": [],
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, dolorum eveniet minus suscipit debitis animi sequi molestiae obcaecati distinctio assumenda quod, unde nam! Labore libero impedit delectus ea magnam unde?",
-      "raiting": 0
+      "raiting": 4.3
     },
     {
       "id": "item8",
@@ -87,7 +88,7 @@
       "category": "bottoms",
       "reviews": [],
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, dolorum eveniet minus suscipit debitis animi sequi molestiae obcaecati distinctio assumenda quod, unde nam! Labore libero impedit delectus ea magnam unde?",
-      "raiting": 0
+      "raiting": 2
     },
     {
       "id": "item9",
@@ -98,7 +99,7 @@
       "category": "bottoms"
       ,"reviews": [],
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, dolorum eveniet minus suscipit debitis animi sequi molestiae obcaecati distinctio assumenda quod, unde nam! Labore libero impedit delectus ea magnam unde?",
-      "raiting": 0
+      "raiting": 5
     },
     {
       "id": "item10",
@@ -109,7 +110,7 @@
       "category": "bottoms",
       "reviews": [],
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, dolorum eveniet minus suscipit debitis animi sequi molestiae obcaecati distinctio assumenda quod, unde nam! Labore libero impedit delectus ea magnam unde?",
-      "raiting": 0
+      "raiting": 1.9
     },
     {
       "id": "item11",
@@ -120,7 +121,7 @@
       "category": "bottoms",
       "reviews": [],
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, dolorum eveniet minus suscipit debitis animi sequi molestiae obcaecati distinctio assumenda quod, unde nam! Labore libero impedit delectus ea magnam unde?",
-      "raiting": 0
+      "raiting": 4.75
     },
     {
       "id": "item12",
@@ -131,7 +132,7 @@
       "category": "bottoms",
       "reviews": [],
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, dolorum eveniet minus suscipit debitis animi sequi molestiae obcaecati distinctio assumenda quod, unde nam! Labore libero impedit delectus ea magnam unde?",
-      "raiting": 0
+      "raiting": 3.35
     },
     {
       "id": "item13",
@@ -142,7 +143,7 @@
       "category": "bottoms",
       "reviews": [],
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, dolorum eveniet minus suscipit debitis animi sequi molestiae obcaecati distinctio assumenda quod, unde nam! Labore libero impedit delectus ea magnam unde?",
-      "raiting": 0
+      "raiting": 2.75
     },
     {
       "id": "item14",
@@ -153,7 +154,7 @@
       "category": "hats",
       "reviews": [],
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, dolorum eveniet minus suscipit debitis animi sequi molestiae obcaecati distinctio assumenda quod, unde nam! Labore libero impedit delectus ea magnam unde?",
-      "raiting": 0
+      "raiting": 3.25
     }
   ]
 }

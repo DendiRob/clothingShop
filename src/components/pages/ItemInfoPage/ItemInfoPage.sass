@@ -6,7 +6,11 @@
     &__photo
         width: 500px
         height: 500px
-        background-color: black
+        background-color: white
+        img 
+            width: 500px
+            height: 500px
+            object-fit: cover
     &__info
         width: 420px   
         &_title
@@ -20,3 +24,182 @@
             font-weight: 100
             color: #50735F
             margin-top: 20px
+        &_price
+            color: #50735F
+            font-size: 36px
+            font-family: GT Cinetype Regular
+            margin-top: 60px
+            font-weight: 0
+            text-transform: uppercase
+        &_color
+            margin-top: 30px
+            display: flex
+            justify-content: flex-start
+            &-item
+                margin-right: 7px
+                width: 32px
+                height: 32px
+                background-color: red
+        &_rating
+            display: flex
+            margin-top: 25px
+            width: 210px
+            height: 16px
+            justify-content: space-between
+            align-items: flex-start
+            &-stars
+                display: flex 
+                align-items: flex-end
+                font-size: 50px
+                line-height: 0.4
+                &-body
+                    position: relative
+                    &::before
+                        content: '⭑⭑⭑⭑⭑'
+                        display: block
+                        color: #50735F
+                &-active
+                    display: flex
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    top: 0
+                    left: 0
+                    overflow: hidden
+                    &::before
+                        content: '⭑⭑⭑⭑⭑'
+                        display: block
+                        width: 100%
+                        height: 100%
+                        top: 0
+                        left: 0
+                        color: #ffd300
+                &-items
+                    display: flex
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    top: 0
+                    left: 0
+                &-item
+                    flex: 0 0 20%
+                    height: 100%
+                    opacity: 0
+            &-reviews
+                color: #50735F
+                font-size: 14px
+                font-family: GT Cinetype Regular
+        &_size
+            margin-top: 20px
+            &-title
+                color: #50735F
+                font-size: 14px
+                font-family: GT Cinetype Regular
+            &-selecter
+                width: 230px
+                position: relative
+                &-value
+                    position: relative
+                    width: 100%
+                    height: 50px
+                    border: 1px solid #50735F
+                    color: #50735F
+                    border-radius: 10px
+                    display: flex
+                    align-items: center
+                    padding-left: 12px
+                    margin-top: 8px
+                    width: 216px    
+                &-arrow
+                    border: none
+                    position: absolute
+                    background: url("./img/shopfilterdown.svg") 0px 0px no-repeat
+                    width: 15px
+                    height: 15px
+                    right: 0
+                    top: 8px
+                &-sizeList
+                    background-color: #fff
+                    border: 1px solid #50735F
+                    border-radius: 10px
+                    padding: 0
+                    overflow: hidden
+                    z-index: 10
+                    position: absolute
+                    width: 228px
+                    top: 40px
+                    display: none
+                &-item
+                    color: #50735F
+                    font-size: 14px
+                    font-family: GT Cinetype Regular
+                    list-style-type: none
+                    padding: 7px 0 7px 13px
+                    &:hover
+                        background-color: #50735F
+                        color: #fff
+        &_quantity
+            margin-top: 20px      
+            &-title
+                color: #50735F
+                font-size: 14px
+                font-family: GT Cinetype Regular
+            &-wrapper
+                display: flex
+                width: 94px
+                height: 50px
+                border: 1px solid #50735F
+                border-radius: 10px
+                overflow: hidden
+            &-dec
+                color:#50735F
+                font-size: 25px
+                font-family: GT Cinetype Regular
+                border-right: 1px solid #50735F
+                display: flex
+                align-items: center
+                padding: 0 10px 0 10px
+                cursor: pointer
+                &:active
+                    background-color: #50735F
+                    color: #fff
+            &-inc
+                color:#50735F
+                font-size: 25px
+                font-family: GT Cinetype Regular
+                display: flex
+                align-items: center
+                padding: 0 10px 0 10px
+                cursor: pointer
+                &:active
+                    background-color: #50735F
+                    color: #fff
+            &-value
+                color:#50735F
+                font-size: 16px
+                font-family: GT Cinetype Regular
+                border-right: 1px solid #50735F
+                display: flex
+                align-items: center
+                padding: 0 10px 0 10px
+    &__btn
+        font-family: GT Cinetype Regular
+        font-size: 14px
+        margin-top: 30px
+        width: 180px
+        height: 50px
+        border: none
+        background-color: #C58A46
+        border-radius: 80px
+        color: #fff
+        text-transform: uppercase
+        display: flex
+        justify-content: center
+        align-items: center
+        padding-bottom: 3px
+        cursor: pointer
+
+
+
+
+                                

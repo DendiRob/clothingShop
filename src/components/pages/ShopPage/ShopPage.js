@@ -3,7 +3,7 @@ import './ShopPage.sass'
 import { observer } from "mobx-react-lite";
 import shopPriceFilter from "../../../store/shopPriceFilter";
 import ShopCard from './shopCard/shopCard';
-import shopItemsArr from "../../../store/shopItemsArr";
+import shopItemsFetch from "../../../store/shopItemsFetch";
 import categoryStates from "../../../store/categoryStates";
 
 
@@ -11,7 +11,7 @@ const ShopPage = observer(() => {
 
     useEffect(() => {
 
-        shopItemsArr.loadItems()
+        shopItemsFetch.loadItems()
     }, []);
 
     return(
@@ -35,16 +35,16 @@ const ShopPage = observer(() => {
                         }}>  
                             <li className="shopPage__sort_filter-item" onClick={() =>{
                                 if(shopPriceFilter.statusFilter !== 'All'){
-                                    shopItemsArr.sortAllPriceItems()
+                                    shopItemsFetch.sortAllPriceItems()
                                 }
                                 shopPriceFilter.chooseNameFilter("All")
                         }}>All</li>
                             <li className="shopPage__sort_filter-item" onClick={() => {
-                                shopItemsArr.sortLowToHighPriceItems()
+                                shopItemsFetch.sortLowToHighPriceItems()
                                 shopPriceFilter.chooseNameFilter("Price - Low to High")
                                 }}>Price - Low to High</li>
                             <li className="shopPage__sort_filter-item" onClick={() => {
-                                shopItemsArr.sortHighToLowPriceItems()
+                                shopItemsFetch.sortHighToLowPriceItems()
                                 shopPriceFilter.chooseNameFilter("Price - High to Low")
                         }}>Price - High to Low</li>
                         </ul>
@@ -67,7 +67,7 @@ const ShopPage = observer(() => {
                                     backgroundColor: categoryStates.tops? "#50735F":""
                                 }}
                                 onClick={() => {
-                                    shopItemsArr.chooseCategory('tops') 
+                                    shopItemsFetch.chooseCategory('tops') 
                                     categoryStates.onTops()}
                                 }
                                 ></div>
@@ -80,7 +80,7 @@ const ShopPage = observer(() => {
                                     backgroundColor: categoryStates.bottoms? "#50735F":""
                                 }}
                                 onClick={() => {
-                                    shopItemsArr.chooseCategory('bottoms') 
+                                    shopItemsFetch.chooseCategory('bottoms') 
                                     categoryStates.onBottoms()}
                                 }
                                 ></div>
@@ -93,7 +93,7 @@ const ShopPage = observer(() => {
                                     backgroundColor: categoryStates.rompers? "#50735F":""
                                 }}
                                 onClick={() => {
-                                    shopItemsArr.chooseCategory('rompers') 
+                                    shopItemsFetch.chooseCategory('rompers') 
                                     categoryStates.onRompers()}
                                 }
                                 ></div>
@@ -106,7 +106,7 @@ const ShopPage = observer(() => {
                                     backgroundColor: categoryStates.hats? "#50735F":""
                                 }}
                                 onClick={() => {
-                                    shopItemsArr.chooseCategory('hats') 
+                                    shopItemsFetch.chooseCategory('hats') 
                                     categoryStates.onHats()}
                                 }
                                 ></div>
@@ -116,7 +116,7 @@ const ShopPage = observer(() => {
                     </div>
                     <ul className="shopPage__clothes">
                         {
-                            shopItemsArr.shopItems.map((item) => {
+                            shopItemsFetch.shopItems.map((item) => {
                                 return(
                                     <ShopCard key={item.id} item={item}/>
                                 )
