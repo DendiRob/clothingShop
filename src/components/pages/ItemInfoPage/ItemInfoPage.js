@@ -4,6 +4,7 @@ import itemInfoFetch from "../../../store/itemInfoFetch";
 import { useParams } from "react-router";
 import { observer} from "mobx-react-lite";
 import selectSizeState from "../../../store/selectSizeState";
+import { Link } from "react-router-dom";
 
 
 const ItemInfoPage = observer(() => {
@@ -13,11 +14,13 @@ const ItemInfoPage = observer(() => {
 
     useEffect(() => {
         itemInfoFetch.findItem(id)
-        selectSizeState.chooseSize('Select value')
-    }, [id])
+        itemInfoFetch.filterByColors()
+        selectSizeState.chooseSize ('Select value')
+        }, [id])
+    
     return(
         <div onClick={() => selectSizeState.closeMenu()}>
-            <div className="container">
+            <div className="container" >
                 <div className="itemInfoPage">
                     <div className="itemInfoPage__photo">
                         <img src={urlPhoto} alt="photoItem"></img>
@@ -46,9 +49,18 @@ const ItemInfoPage = observer(() => {
                         </div>
                         <div className="itemInfoPage__info_price">{price} USD</div>
                         <div className="itemInfoPage__info_color">
-                            <div className="itemInfoPage__info_color-item"></div>
-                            <div className="itemInfoPage__info_color-item"></div>
-                            <div className="itemInfoPage__info_color-item"></div>
+                            {itemInfoFetch.itemSimilarColor.map(el => {
+                                return(
+                                    <Link
+                                    key={el.id}
+                                    className="itemInfoPage__info_color-item" 
+                                    to={`/shop/${el.id}`} 
+                                    style={{
+                                        backgroundColor: el.color,
+                                        border:(el.id === id)? "1px solid #000": "none"
+                                    }}></Link>
+                                )
+                            })}
                         </div>
                         <div className="itemInfoPage__info_size">
                             <div className="itemInfoPage__info_size-title">Size</div>
